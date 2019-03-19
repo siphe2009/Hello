@@ -16,16 +16,13 @@ def fibonacci(n):
         return(fibonacci(n-1) + fibonacci(n-2))
 
 def factorial(n):
+    if n == 1:
+        return n
+    else:
+        lower_fact = factorial(n-1)
+        current_fact = n * lower_fact
 
-    '''Return n!'''
-    x = 1
-    y = 2
-
-    while y <= n:
-        x = x * y
-        y = y + 1
-
-    return x
+    return  current_fact
 
 def reverse(word):
 

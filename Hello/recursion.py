@@ -16,6 +16,7 @@ def fibonacci(n):
         return(fibonacci(n-1) + fibonacci(n-2))
 
 def factorial(n):
+
     '''Return n!'''
     x = 1
     y = 2
@@ -23,6 +24,8 @@ def factorial(n):
     while y <= n:
         x = x * y
         y = y + 1
+
+    return x
 
 def reverse(word):
 
